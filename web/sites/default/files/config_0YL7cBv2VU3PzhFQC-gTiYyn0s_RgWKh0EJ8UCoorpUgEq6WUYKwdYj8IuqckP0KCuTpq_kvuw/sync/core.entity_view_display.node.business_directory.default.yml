@@ -1,0 +1,234 @@
+uuid: fbaaeeab-57ee-4ec9-9dce-7e344d0bb359
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business_directory.field_address
+    - field.field.node.business_directory.field_category
+    - field.field.node.business_directory.field_description
+    - field.field.node.business_directory.field_featured_video
+    - field.field.node.business_directory.field_file_downloads
+    - field.field.node.business_directory.field_logo
+    - field.field.node.business_directory.field_phone
+    - field.field.node.business_directory.field_website_address
+    - node.type.business_directory
+  module:
+    - file
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - simple_gmap
+    - telephone
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          9bdb2eb8-0da5-423d-8dea-3269109a2c61:
+            uuid: 9bdb2eb8-0da5-423d-8dea-3269109a2c61
+            region: first
+            configuration:
+              id: 'field_block:node:business_directory:field_address'
+              label: Address
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: simple_gmap
+                label: hidden
+                settings:
+                  include_map: true
+                  include_static_map: false
+                  include_link: false
+                  include_text: false
+                  iframe_height: 70%
+                  iframe_width: 70%
+                  iframe_title: ''
+                  static_scale: 1
+                  zoom_level: 14
+                  link_text: 'View larger map'
+                  map_type: m
+                  langcode: en
+                  apikey: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f85f57b1-c6ed-4af1-ac8f-bce368581354:
+            uuid: f85f57b1-c6ed-4af1-ac8f-bce368581354
+            region: second
+            configuration:
+              id: 'field_block:node:business_directory:field_category'
+              label: Category
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          cf80573b-6f00-431e-a3df-9a6a9931d51d:
+            uuid: cf80573b-6f00-431e-a3df-9a6a9931d51d
+            region: second
+            configuration:
+              id: 'field_block:node:business_directory:field_website_address'
+              label: 'Website address'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link_separate
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          8348ba65-a5dd-45b7-9a8b-367ce54da271:
+            uuid: 8348ba65-a5dd-45b7-9a8b-367ce54da271
+            region: content
+            configuration:
+              id: 'field_block:node:business_directory:field_description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.business_directory.default
+targetEntityType: node
+bundle: business_directory
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_address:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: false
+      include_text: false
+      iframe_height: '500'
+      iframe_width: '500'
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_featured_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_file_downloads:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_logo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_phone:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_website_address:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

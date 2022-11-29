@@ -1,0 +1,25 @@
+uuid: dc4d7bcd-6f18-48b4-a342-4f62af7f9ad1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b1d18cc8-e2b5-4163-9d2f-8ac1dc42b2d4'
+  module:
+    - block_content
+  theme:
+    - breeze
+id: breeze_welcomeblock
+theme: breeze
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:b1d18cc8-e2b5-4163-9d2f-8ac1dc42b2d4'
+settings:
+  id: 'block_content:b1d18cc8-e2b5-4163-9d2f-8ac1dc42b2d4'
+  label: 'Welcome block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

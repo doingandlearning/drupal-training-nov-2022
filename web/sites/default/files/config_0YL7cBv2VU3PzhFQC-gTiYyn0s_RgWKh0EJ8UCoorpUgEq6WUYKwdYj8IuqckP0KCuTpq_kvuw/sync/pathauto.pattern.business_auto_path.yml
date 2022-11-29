@@ -1,0 +1,22 @@
+uuid: aa7b3893-725c-47ca-af91-13852b2a00f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: business_auto_path
+label: 'Business Auto Path'
+type: 'canonical_entities:node'
+pattern: '/business/[node:title]'
+selection_criteria:
+  f9c7612b-441b-4ee9-a9bd-f504504813e2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f9c7612b-441b-4ee9-a9bd-f504504813e2
+    context_mapping:
+      node: node
+    bundles:
+      business_directory: business_directory
+selection_logic: and
+weight: -5
+relationships: {  }

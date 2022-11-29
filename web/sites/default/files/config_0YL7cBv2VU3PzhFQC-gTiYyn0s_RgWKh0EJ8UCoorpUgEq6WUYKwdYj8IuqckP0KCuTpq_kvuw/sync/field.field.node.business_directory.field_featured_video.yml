@@ -1,0 +1,21 @@
+uuid: 5ba84651-54d3-40a9-853e-b96bcad1b6f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_video
+    - node.type.business_directory
+id: node.business_directory.field_featured_video
+field_name: field_featured_video
+entity_type: node
+bundle: business_directory
+label: 'Featured video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

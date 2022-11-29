@@ -1,0 +1,22 @@
+uuid: 36a20ef2-cdcb-4b29-8089-2d5e72da5d9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - breeze
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: breeze_breadcrumbs
+theme: breeze
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

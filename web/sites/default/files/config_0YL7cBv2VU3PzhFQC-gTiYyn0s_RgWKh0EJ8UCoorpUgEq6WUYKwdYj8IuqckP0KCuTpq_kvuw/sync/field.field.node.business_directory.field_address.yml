@@ -1,0 +1,19 @@
+uuid: 9ae02b62-2409-4ebd-b651-b0d3e55e1316
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.business_directory
+id: node.business_directory.field_address
+field_name: field_address
+entity_type: node
+bundle: business_directory
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

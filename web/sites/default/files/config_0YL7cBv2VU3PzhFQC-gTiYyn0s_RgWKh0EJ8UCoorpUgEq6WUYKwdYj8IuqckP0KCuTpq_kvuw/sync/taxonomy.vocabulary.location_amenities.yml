@@ -1,0 +1,8 @@
+uuid: 6d2a2888-19ad-4845-b06b-3b8c289d92ca
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location Amenities'
+vid: location_amenities
+description: ''
+weight: 0

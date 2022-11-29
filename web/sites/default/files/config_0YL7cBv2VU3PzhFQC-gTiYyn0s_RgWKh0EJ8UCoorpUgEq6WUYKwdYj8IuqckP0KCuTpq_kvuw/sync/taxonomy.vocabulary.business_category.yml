@@ -1,0 +1,8 @@
+uuid: a7dd6a89-8628-459d-b546-b4d86031b866
+langcode: en
+status: true
+dependencies: {  }
+name: 'Business Category'
+vid: business_category
+description: ''
+weight: 0

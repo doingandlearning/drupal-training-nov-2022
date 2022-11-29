@@ -1,0 +1,30 @@
+uuid: afb308a8-8d0a-4e31-a92b-f76df319369b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3043a13d-b0f6-440b-ab9e-c7cff3818ee4'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: salenowon
+theme: olivero
+region: header
+weight: -6
+provider: null
+plugin: 'block_content:3043a13d-b0f6-440b-ab9e-c7cff3818ee4'
+settings:
+  id: 'block_content:3043a13d-b0f6-440b-ab9e-c7cff3818ee4'
+  label: 'Sale now on!'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/user/*'

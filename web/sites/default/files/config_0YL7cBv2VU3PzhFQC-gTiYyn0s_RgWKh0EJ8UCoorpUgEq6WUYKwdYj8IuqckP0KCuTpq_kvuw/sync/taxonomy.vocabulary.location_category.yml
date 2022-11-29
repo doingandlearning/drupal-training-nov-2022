@@ -1,0 +1,8 @@
+uuid: 266e469b-816d-42da-b549-7818d790ad31
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location Category'
+vid: location_category
+description: ''
+weight: 0

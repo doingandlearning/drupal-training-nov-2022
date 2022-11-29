@@ -1,0 +1,27 @@
+uuid: e3885e8d-55fc-4740-9458-5799ea3db687
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_downloads
+    - node.type.business_directory
+  module:
+    - file
+id: node.business_directory.field_file_downloads
+field_name: field_file_downloads
+entity_type: node
+bundle: business_directory
+label: 'File downloads'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

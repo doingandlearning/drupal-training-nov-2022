@@ -1,0 +1,28 @@
+uuid: b8d1d62d-b93d-4bb9-8347-f0922c5be370
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.location.field_address
+    - field.field.node.location.field_description
+    - field.field.node.location.field_location_amenities
+    - field.field.node.location.field_location_type
+    - node.type.location
+  module:
+    - user
+id: node.location.teaser
+targetEntityType: node
+bundle: location
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  field_description: true
+  field_location_amenities: true
+  field_location_type: true

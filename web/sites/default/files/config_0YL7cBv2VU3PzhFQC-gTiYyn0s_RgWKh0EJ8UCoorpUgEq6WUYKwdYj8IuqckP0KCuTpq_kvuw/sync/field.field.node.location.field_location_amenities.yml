@@ -1,0 +1,29 @@
+uuid: e4ccef0d-07e0-4610-9a6c-36edeb999331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_amenities
+    - node.type.location
+    - taxonomy.vocabulary.location_amenities
+id: node.location.field_location_amenities
+field_name: field_location_amenities
+entity_type: node
+bundle: location
+label: 'Location Amenities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location_amenities: location_amenities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

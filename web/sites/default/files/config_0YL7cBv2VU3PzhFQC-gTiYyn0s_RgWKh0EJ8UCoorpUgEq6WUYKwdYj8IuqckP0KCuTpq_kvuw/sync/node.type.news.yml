@@ -1,0 +1,17 @@
+uuid: 9f6df3e0-3be5-4bca-915f-8bde187fbb91
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: 'Use this content type for news or press releases.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

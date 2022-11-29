@@ -1,0 +1,20 @@
+uuid: 608318d3-a2b2-4c4c-96c2-4d2bf17e696d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_net_worth
+field_name: field_net_worth
+entity_type: user
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
