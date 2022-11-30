@@ -1,0 +1,15 @@
+random_quote.quote:
+  path: "/random-quote"
+  defaults:
+    _controller: Drupal\random_quote\Controller\RandomQuoteController::randomQuote
+    _title: "Random web development quote"
+  requirements:
+    _permission: "access content"
+
+random_quote.custom_quote_form:
+  path: " "
+  defaults:
+    _form: Drupal\random_quote\Form\QuoteConfigurationForm
+    _title: "Quote configuration"
+  requirements:
+    _permission: "administer site configuration"
