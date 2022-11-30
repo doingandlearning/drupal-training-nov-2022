@@ -52,7 +52,7 @@ class RandomQuoteBlock extends BlockBase implements ContainerFactoryPluginInterf
 
 	public function defaultConfiguration() {
 		return [
-			'enabled' => 1
+			'enabled' => 0
 		];
 	}
 

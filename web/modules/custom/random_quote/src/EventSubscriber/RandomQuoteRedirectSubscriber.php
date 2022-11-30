@@ -39,6 +39,8 @@ class RandomQuoteRedirectSubscriber implements EventSubscriberInterface
 	}
 
 	public function onRequest(GetResponseEvent $event) {
+		return;
+		
 		$request = $event->getRequest();
 		$path = $request->getPathInfo();
 
@@ -49,10 +51,11 @@ class RandomQuoteRedirectSubscriber implements EventSubscriberInterface
 		$roles = $this->currentUser->getRoles();
 
 		if(in_array("administrator", $roles)) {
-			// $url = Url::fromRoute('/admin/config/random-quote-config');
-			$event->setResponse(new LocalRedirectResponse('/admin/config/random-quote-config'));
+			$url = Url::fromRoute('random_quote.custom_quote_form');
+			$event->setResponse(new LocalRedirectResponse($url->toString()));
 		} else {
 			return;
 		}
 	}
 }
+

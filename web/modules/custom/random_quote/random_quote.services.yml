@@ -7,3 +7,12 @@ services:
     arguments: ['@current_user', '@current_route_match']
     tags:
       - { name: event_subscriber }
+
+  random_quote.logger.channel.random_quote:
+    parent: logger.channel_base
+    arguments: ['random_quote']
+
+  random_quote.logger.mail_logger:
+    class: Drupal\random_quote\Logger\MailLogger
+    tags:
+      - { name: logger }
