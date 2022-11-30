@@ -14,5 +14,6 @@ services:
 
   random_quote.logger.mail_logger:
     class: Drupal\random_quote\Logger\MailLogger
+    arguments: ['@logger.log_message_parser', '@config.factory']
     tags:
       - { name: logger }

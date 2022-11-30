@@ -25,6 +25,7 @@
         "drupal/extlink": "^1.7",
         "drupal/layout_builder_admin_theme": "^1.1",
         "drupal/linkit": "^5.0@beta",
+        "drupal/mailsystem": "^4.4",
         "drupal/pathauto": "^1.11",
         "drupal/scheduler": "^1.4",
         "drupal/simple_gmap": "^3.0",

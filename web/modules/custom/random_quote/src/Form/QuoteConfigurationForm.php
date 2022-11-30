@@ -39,10 +39,9 @@ class QuoteConfigurationForm extends ConfigFormBase
 	{
 		return new static (
 			$container->get('config.factory'),
-			$container->get('random_quote.logger.mail_logger')
+			$container->get('random_quote.logger.channel.random_quote')
 		);
 	}
-
 
 	/**
 	 * {@inheritdoc}
@@ -51,8 +50,6 @@ class QuoteConfigurationForm extends ConfigFormBase
 	{
 		return ['random_quote.custom_quotes'];
 	}
-
-
 
 	/**
 	 * {@inheritdoc}
@@ -83,9 +80,10 @@ class QuoteConfigurationForm extends ConfigFormBase
 	{
 		$formValues = $form_state->getValue('quotes');
 		$arrayValues = explode("\n", $formValues);
-
+		
 		$trimmedValues = array_map('trim', $arrayValues);
-
+		$this->logger->info('A new quote was added, they are now @quote.', ['@quote' => $formValues]);
+		$this->logger->error("send an error");
 		$this->config('random_quote.custom_quotes')
 			->set('quotes', $trimmedValues)
 			->save();

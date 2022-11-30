@@ -40,7 +40,7 @@ class RandomQuoteController extends ControllerBase {
 
   public function randomQuote() {
 		// return new \Symfony\Component\HttpFoundation\RedirectResponse("/node/1");
-		$this->logger->debug("This is a debug message");
+		// $this->logger->debug("This is a debug message");
 
 		return [
 			'#markup' => "<p>" . $this->quote->get_random_quote() . "</p>",
