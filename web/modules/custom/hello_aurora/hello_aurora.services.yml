@@ -1,0 +1,4 @@
+services:
+  hello_aurora.greeting:
+    class: Drupal\hello_aurora\Service\GreetingService
+    arguments: ['@config.factory']

@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Hello Aurora module file.
+ * 
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function hello_aurora_help($route_name, RouteMatchInterface $route_match)
+{
+	switch($route_name) {
+		case 'help.page.hello_aurora':
+			$output = '<h3>' . t('About') . '</h3>';
+			$output .= '<p>' . t('This is our example module.') . '</p>';
+			return $output;
+		default:
+	}
+}

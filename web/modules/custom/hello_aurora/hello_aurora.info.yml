@@ -1,0 +1,5 @@
+name: Hello Aurora
+description: Example module to build understanding
+type: module
+core_version_requirement: ^9
+package: Aurora

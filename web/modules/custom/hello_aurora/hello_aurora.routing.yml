@@ -1,0 +1,15 @@
+hello_aurora.hello:
+  path: "/hello"
+  defaults:
+    _controller: Drupal\hello_aurora\Controller\HelloAuroraController::helloAurora
+    _title: "Hello from Aurora (from routing.yml)"
+  requirements:
+    _permission: "access content"
+
+hello_aurora.greeting_form:
+  path: "/admin/config/greeting-configuration"
+  defaults:
+    _form: Drupal\hello_aurora\Form\GreetingConfigurationForm
+    _title: "Greeting configuration"
+  requirements:
+    _permission: "administer site configuration"

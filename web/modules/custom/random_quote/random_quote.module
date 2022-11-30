@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Hello Aurora module file.
+ * 
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function random_quote_help($route_name, RouteMatchInterface $route_match)
+{
+	switch($route_name) {
+		case 'help.page.random_quote':
+			$output = '<h3>' . t('Random Web Dev Quotes') . '</h3>';
+			$output .= '<p>' . t('This is a module for random web development quotes.') . '</p>';
+			$output .= '<p>' . t('You can add your own to the list in the <a href="/admin/config/random-quote-config">config page.</a>') . '</p>';
+			return $output;
+		default:
+	}
+}
