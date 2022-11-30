@@ -2,3 +2,8 @@ services:
   random_quote.quote:
     class: Drupal\random_quote\Service\QuoteService
     arguments: ['@config.factory']
+  random_quote.redirect_subscriber:
+    class: Drupal\random_quote\EventSubscriber\RandomQuoteRedirectSubscriber
+    arguments: ['@current_user', '@current_route_match']
+    tags:
+      - { name: event_subscriber }

@@ -7,6 +7,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_help().
@@ -15,9 +16,11 @@ function random_quote_help($route_name, RouteMatchInterface $route_match)
 {
 	switch($route_name) {
 		case 'help.page.random_quote':
+			// $url = Url::fromRoute("/en/admin/config/random-quote-config");
+			// $link = \Drupal::service('link_generator')->generate('config page', $url);
 			$output = '<h3>' . t('Random Web Dev Quotes') . '</h3>';
 			$output .= '<p>' . t('This is a module for random web development quotes.') . '</p>';
-			$output .= '<p>' . t('You can add your own to the list in the <a href="/admin/config/random-quote-config">config page.</a>') . '</p>';
+			$output .= '<p>' . t('You can add your own to the list in the config page.') . '</p>';
 			return $output;
 		default:
 	}

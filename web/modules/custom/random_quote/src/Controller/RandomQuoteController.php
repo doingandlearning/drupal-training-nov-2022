@@ -32,6 +32,8 @@ class RandomQuoteController extends ControllerBase {
 	}
 
   public function randomQuote() {
+		// return new \Symfony\Component\HttpFoundation\RedirectResponse("/node/1");
+
 		return [
 			'#markup' => "<p>" . $this->quote->get_random_quote() . "</p>",
 			'#cache' => ['max-age' => 0],

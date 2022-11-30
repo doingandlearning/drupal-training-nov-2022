@@ -7,7 +7,7 @@ random_quote.quote:
     _permission: "access content"
 
 random_quote.custom_quote_form:
-  path: " "
+  path: "/admin/config/random-quote-config"
   defaults:
     _form: Drupal\random_quote\Form\QuoteConfigurationForm
     _title: "Quote configuration"
