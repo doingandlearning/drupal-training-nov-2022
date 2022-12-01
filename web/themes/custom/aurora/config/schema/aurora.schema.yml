@@ -1,0 +1,8 @@
+# Schema for the configuration files of the Aurora theme.
+aurora.settings:
+  type: theme_settings
+  label: 'Aurora settings'
+  mapping:
+    font_size:
+      type: integer
+      label: Font size

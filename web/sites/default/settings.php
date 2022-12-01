@@ -806,4 +806,3 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/pgsql/src/Driver/Database/pgsql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_0YL7cBv2VU3PzhFQC-gTiYyn0s_RgWKh0EJ8UCoorpUgEq6WUYKwdYj8IuqckP0KCuTpq_kvuw/sync';
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default.services.yml';

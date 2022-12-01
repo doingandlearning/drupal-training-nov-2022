@@ -1,0 +1,5 @@
+<ul{{ attributes }}>
+  {% for item in node.field_location_amenities %}
+    <li>{{ item.entity.name.value }}</li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,8 @@
+<div>
+  <h1>{{ node.title.value }} </h1>
+	<strong>{{ node.field_address.value }}</strong>
+	<p>Phone: {{ node.field_phone.value }}</p>
+	<p>{% for item in node.field_category %}
+    <li>{{ item.name.value }}</li>
+  {% endfor %}
+</div>

@@ -53,3 +53,14 @@ function random_quote_theme($existing, $type, $theme, $path) {
 		]
 	];
 }
+
+/**
+ * 
+ */
+function template_preprocess_random_quote_block(&$variables) {
+	$variables['attributes'] = [
+		'class' => 'quote-block',
+		'id' => 'this-is-test',
+		'data-test' => 'test'
+	];
+}
