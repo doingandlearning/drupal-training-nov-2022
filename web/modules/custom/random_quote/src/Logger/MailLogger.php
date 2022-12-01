@@ -23,7 +23,7 @@ class MailLogger implements LoggerInterface
 	 * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
 	 */
 
-	public function __construct(LogMessageParserInterface $parser,ConfigFactoryInterface $configFactory)
+	public function __construct(LogMessageParserInterface $parser, ConfigFactoryInterface $configFactory)
 	{
 		$this->parser = $parser;
 		$this->configFactory = $configFactory;
@@ -48,7 +48,7 @@ class MailLogger implements LoggerInterface
 			'random_quote_log',
 			$to,
 			$langcode,
-			['message' => $markup]
+			['message' => $markup . $message . $variables . "Looking good here!"]
 		);
 
 	}

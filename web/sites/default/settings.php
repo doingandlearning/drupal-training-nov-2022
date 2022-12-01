@@ -791,9 +791,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
 $databases['default']['default'] = array (
   'database' => 'drupal',
   'username' => 'kevin',
@@ -806,3 +806,4 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/pgsql/src/Driver/Database/pgsql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_0YL7cBv2VU3PzhFQC-gTiYyn0s_RgWKh0EJ8UCoorpUgEq6WUYKwdYj8IuqckP0KCuTpq_kvuw/sync';
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default.services.yml';
