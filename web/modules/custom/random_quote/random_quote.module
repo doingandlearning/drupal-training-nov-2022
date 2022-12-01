@@ -39,3 +39,17 @@ function random_quote_mail($key, $message, $params) {
 		default:
 	}
 }
+
+
+/**
+ * Implements hook_theme()
+ */
+function random_quote_theme($existing, $type, $theme, $path) {
+	return [
+		'random_quote_block' => [
+			'variables' => [
+				'quote' => ''
+			]
+		]
+	];
+}

@@ -85,7 +85,8 @@ class DatetimeBlock extends BlockBase implements ContainerFactoryPluginInterface
     $formattedDate = $datetime->format($config['format_string']);
 
     $build['content'] = [
-      '#markup' => $formattedDate,
+      '#markup' => $formattedDate,  
+      '#cache' => ['max-age' => 0]
     ];
     return $build;
   }

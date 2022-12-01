@@ -80,8 +80,9 @@ class RandomQuoteBlock extends BlockBase implements ContainerFactoryPluginInterf
 		$config = $this->getConfiguration();
 
 		return $config["enabled"] ? [
-			'#markup' => "<p>" . $this->quote->get_random_quote() . "</p>",
+			'#theme' => 'random_quote_block',
 			'#cache' => ['max-age' => 0],
+			'#quote' => $this->quote->get_random_quote()
 		] : [];
 	}
 }

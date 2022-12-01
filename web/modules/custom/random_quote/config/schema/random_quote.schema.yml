@@ -1,7 +1,0 @@
-block.settings.random_quote_datetime:
-  type: block_settings
-  label: 'DateTime block'
-  mapping:
-    foo:
-      type: string
-      label: Foo

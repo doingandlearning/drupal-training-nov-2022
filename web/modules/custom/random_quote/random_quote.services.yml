@@ -11,6 +11,10 @@ services:
   random_quote.logger.channel.random_quote:
     parent: logger.channel_base
     arguments: ['random_quote']
+  
+  random_quote.logger.channel.date_time:
+    parent: logger.channel_base
+    arguments: ['date_time']
 
   random_quote.logger.mail_logger:
     class: Drupal\random_quote\Logger\MailLogger
