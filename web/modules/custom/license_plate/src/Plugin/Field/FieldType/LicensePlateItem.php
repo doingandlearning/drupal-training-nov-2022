@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\number_plate\Plugin\Field\FieldType;
+namespace Drupal\license_plate\Plugin\Field\FieldType;
 
 use Drupal\Core\Field\FieldItemBase;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
@@ -11,17 +11,17 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\TypedData\DataDefinition;
 
 /**
- * Plugin implementation of the 'number_plate' field type.
+ * Plugin implementation of the 'license_plate' field type.
  *
  * @FieldType(
- *   id = "number_plate",
- *   label = @Translation("Number plate"),
- *   description = @Translation("Field for storing number plates"),
- *   default_widget = "default_number_plate_widget",
- *   default_formatter = "default_number_plate_formatter"
+ *   id = "license_plate",
+ *   label = @Translation("License plate"),
+ *   description = @Translation("Field for storing license plates"),
+ *   default_widget = "default_license_plate_widget",
+ *   default_formatter = "default_license_plate_formatter"
  * )
  */
-class NumberPlateItem extends FieldItemBase {
+class LicensePlateItem extends FieldItemBase {
 
   use StringTranslationTrait;
 
@@ -165,10 +165,10 @@ class NumberPlateItem extends FieldItemBase {
     $element = [];
 
     $element['codes'] = [
-      '#title' => $this->t('Number plate codes'),
+      '#title' => $this->t('License plate codes'),
       '#type' => 'textarea',
       '#default_value' => $this->getSetting('codes'),
-      '#description' => $this->t('If you want the field to be have a select list with number plate codes instead of a textfield, please provide the available codes. Each code on a new line.'),
+      '#description' => $this->t('If you want the field to be have a select list with license plate codes instead of a textfield, please provide the available codes. Each code on a new line.'),
     ];
 
     return $element;

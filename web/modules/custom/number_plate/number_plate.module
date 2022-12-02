@@ -4,3 +4,12 @@
  * @file
  * Primary module hooks for Number Plate module.
  */
+
+function number_plate_theme($existing, $type, $theme, $path) {
+	return [
+		'number_plate' => [
+			'code' => null,
+			'number' => null
+		]
+	];
+}
