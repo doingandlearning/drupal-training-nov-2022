@@ -34,6 +34,7 @@ class MailLogger implements LoggerInterface
 	 */
 	public function log($level, $message, array $context = [])
 	{
+		return;
 		if ($level != RfcLogLevel::ERROR) {
 			return;
 		}
