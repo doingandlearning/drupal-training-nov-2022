@@ -17,6 +17,7 @@ use Drupal\Core\TypedData\DataDefinition;
  *   id = "number_plate",
  *   label = @Translation("Number plate"),
  *   description = @Translation("Field for storing number plates"),
+ *   default_widget = "default_number_plate_widget"
  * )
  */
 class NumberPlateItem extends FieldItemBase {
