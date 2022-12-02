@@ -32,4 +32,5 @@ content:
 hidden:
   field_net_worth: true
   field_user_address: true
+  langcode: true
   member_for: true

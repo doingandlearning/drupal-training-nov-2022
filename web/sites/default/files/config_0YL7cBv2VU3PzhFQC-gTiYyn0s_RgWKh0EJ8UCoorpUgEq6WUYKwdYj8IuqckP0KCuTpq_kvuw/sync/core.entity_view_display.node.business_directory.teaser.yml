@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.business_directory.field_description
     - field.field.node.business_directory.field_featured_video
     - field.field.node.business_directory.field_file_downloads
+    - field.field.node.business_directory.field_license
     - field.field.node.business_directory.field_logo
     - field.field.node.business_directory.field_phone
     - field.field.node.business_directory.field_website_address
@@ -43,6 +44,8 @@ hidden:
   field_description: true
   field_featured_video: true
   field_file_downloads: true
+  field_license: true
   field_logo: true
   field_phone: true
   field_website_address: true
+  langcode: true

@@ -8,8 +8,10 @@
 function number_plate_theme($existing, $type, $theme, $path) {
 	return [
 		'number_plate' => [
-			'code' => null,
-			'number' => null
+			'variables' => [
+				'code' => null,
+				'number' => null
+			]
 		]
 	];
 }

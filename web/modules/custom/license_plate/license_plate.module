@@ -13,5 +13,8 @@ function license_plate_theme($existing, $type, $theme, $path) {
     'license_plate' => [
       'variables' => ['code' => NULL, 'number' => NULL, 'concatenated' => TRUE],
     ],
+    'iframe_container' => [
+      'variables' => ['url' => NULL, 'width' => NULL, 'height' => NULL],
+    ],
   ];
 }

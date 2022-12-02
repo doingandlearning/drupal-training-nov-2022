@@ -26,3 +26,4 @@ hidden:
   field_description: true
   field_location_amenities: true
   field_location_type: true
+  langcode: true
