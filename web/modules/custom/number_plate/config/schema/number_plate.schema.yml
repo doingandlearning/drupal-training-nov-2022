@@ -1,0 +1,10 @@
+field.storage_settings.number_plate:
+  type: mapping
+  label: 'Number plate storage settings'
+  mapping:
+    number_max_length:
+      type: integer
+      label: 'Max length for the number'
+    code_max_length:
+      type: integer
+      label: 'Max length for the code'

@@ -1,5 +1,0 @@
-name: License Plate
-type: module
-description: Provide a custom field type with formatter and widget for license plates.
-package: Aurora
-core_version_requirement: ^9 || ^10
